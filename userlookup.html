@@ -1,0 +1,231 @@
+<style>
+
+body{
+  font-family: Helvetica, Arial;
+  overflow: hidden;
+}
+
+#footer, #header, #ban,
+#right_of_trohpies, #userneohome, hr{
+display:none;
+}
+
+.contentModule, .contentModuleTable, .contentModuleContent,
+#main, #content{
+  text-align: left;
+  background: none;
+  border: 0;
+}
+div{ text-align: left;}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+  #banner{
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 128px;
+  }
+    #banner-body{
+      margin: 0 auto;
+      background: white;
+      height: 100%;
+      padding: 86px 0;
+      width: 60%;
+    }
+
+      #banner-body-table{
+        display: table;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+      }
+      #avatar-cell{
+        display:table-cell; width: 128px;
+      }
+      #banner-body-table-cell{
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+      }
+          #name-username-links{
+            float: left;
+            padding-left: 20px;
+          }
+            #name, #username, #slash{
+              font-size: 30px;
+              color: #9F02FF;
+            }
+            #slash{
+              color: black;
+            }
+            #username{
+              color: #C23EB4;
+              font-weight: bold;
+            }
+            #links{
+              display: block;
+              font-size: 14px;
+              margin-top: 5px;
+            }
+          #follow{
+            float: right;
+            display: block;
+            position: relative;
+            line-height: 59px;
+            text-align: center;
+            height: 59px;
+            width: 125px;
+            color: #9F02FF;
+            border: 1px solid #DBD9D9;
+            border-radius: 8px;
+          }
+          #follow:hover{
+            border-color: #9F02FF;
+          }
+      #banner-body-table-cell div{
+        display: inline-block;
+      }
+  .main-nav{
+    position: absolute;
+    z-index: 1000;
+    left: 20%;
+    width: 60%;
+  }
+      .main-nav .spacer{
+        height: 300px;
+      }
+      .main-nav ul{
+      list-style: none;
+      background: white;
+      margin: 0;
+      padding: 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .main-nav ul li{
+      margin: 0 20px 0 0;
+      color: #ccc;
+      padding: 0;
+      display: inline-block;
+      border-bottom: 2px solid white;
+    }
+      .main-nav h4{
+        font-weight: normal;
+        font-size: 15px;
+        margin: 0;
+      }
+      .main-nav p{
+        margin: 10px 0 12px 0;
+        font-size: 12px;
+      }
+    .main-nav ul li:hover,
+    .main-nav ul li.selected-nav{
+      color: black;
+      border-bottom: 2px solid black;
+    }
+
+  #synopsis{
+    top: 0px;
+  }
+    #userinfo, #usercollections{
+      position: absolute;
+      top: 350px;
+      width: 30%;
+      left: 20%;
+    }
+    #usercollections{
+      left:50%;
+    }
+  #livestock{
+    top: 10000px;
+  }
+    #userneopets{
+      position: absolute;
+      top: 10350px;
+      left: 20%;
+      width: 60%;
+    }
+  #trophies{
+    top: 20000px;
+  }
+    #usertrophies{
+      position: absolute;
+      top: 20350px;
+      left: 20%;
+      width: 60%;
+    }
+  #crossword{
+    top: 30000px;
+  }
+
+  .spacer-for-last-section-until-there-is-content{
+    height: 10000px;
+  }
+}
+
+</style>
+  <div id="banner">
+    <div id="banner-body">
+      <div id="banner-body-table">
+        <div id="avatar-cell">
+          <img id="avatar" src="https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg" style="width: 128px; height: 128px; border-radius:100px;">
+        </div>
+        <div id="banner-body-table-cell">
+          <div id="name-username-links">
+            <span id="name">name</span><span id="slash"> / </span><span id="username">username</span>
+            <br>
+            <span id="links">
+            <a href="http://www.neopets.com/neomessages.phtml?type=send&recipient=username">neomail</a> /
+            <a href="http://www.neopets.com/process_neofriend_requests.phtml?_ref_ck=46233fef6ae0630d205c71e7e6839cf8&dowhat=add_single_neofriend&neofriend_add=username">neofriend</a> /
+            <a href="http://www.neopets.com/browseshop.phtml?owner=username">shop</a> /
+            <a href="http://www.neopets.com/island/tradingpost.phtml?type=browse&criteria=owner&search_string=username">trades</a> /
+            <a href="http://www.neopets.com/genie.phtml?type=find_user&auction_username=username">auctions</a>
+            </span>
+          </div>
+          <a id="follow" href="https://www.neopets.com/">Follow</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="main-nav" id="synopsis">
+    <div class="spacer"></div>
+    <ul>
+      <li class="selected-nav"><a href="#userinfo"><h4>Synopsis</h4><p>Info, stats, about me, etc.</p></a></li>
+      <li><a href="#livestock"><h4>Neopets</h4><p>Info, stats, about me, etc.</p></a></li>
+      <li><a href="#trophies"><h4>Trophies</h4><p>Info, stats, about me, etc.</p></a></li>
+      <li><a href="#crossword"><h4>Crossword</h4><p>Info, stats, about me, etc.</p></a></li>
+    </ul>
+  </div>
+  <div class="main-nav" id="livestock">
+    <div class="spacer"></div>
+    <ul>
+      <li><a href="#synopsis"><h4>Synopsis</h4><p>Info, stats, about me, etc.</p></a></li>
+      <li class="selected-nav"><a href="#userneopets"><h4>Neopets</h4><p>Info, stats, about me, etc.</p></a></li>
+      <li><a href="#trophies"><h4>Trophies</h4><p>Info, stats, about me, etc.</p></a></li>
+      <li><a href="#crossword"><h4>Crossword</h4><p>Info, stats, about me, etc.</p></a></li>
+    </ul>
+  </div>
+  <div class="main-nav" id="trophies">
+    <div class="spacer"></div>
+      <ul>
+        <li><a href="#synopsis"><h4>Synopsis</h4><p>Info, stats, about me, etc.</p></a></li>
+        <li><a href="#livestock"><h4>Neopets</h4><p>Info, stats, about me, etc.</p></a></li>
+        <li class="selected-nav"><a href="#usertrophies"><h4>Trophies</h4><p>Info, stats, about me, etc.</p></a></li>
+        <li><a href="#crossword"><h4>Crossword</h4><p>Info, stats, about me, etc.</p></a></li>
+      </ul>
+  </div>
+    <div class="main-nav" id="crossword">
+      <div class="spacer"></div>
+      <ul>
+        <li><a href="#synopsis"><h4>Synopsis</h4><p>Info, stats, about me, etc.</p></a></li>
+        <li><a href="#livestock"><h4>Neopets</h4><p>Info, stats, about me, etc.</p></a></li>
+        <li><a href="#trophies"><h4>Trophies</h4><p>Info, stats, about me, etc.</p></a></li>
+        <li class="selected-nav"><a href="#crossword"><h4>Crossword</h4><p>Info, stats, about me, etc.</p></a></li>
+      </ul>
+      <div class="spacer-for-last-section-until-there-is-content"></div>
+  </div>
